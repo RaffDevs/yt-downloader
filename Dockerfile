@@ -15,12 +15,14 @@ FROM node:22-bookworm-slim AS runtime
 WORKDIR /app
 
 RUN apt-get update \
-  && apt-get install -y --no-install-recommends ffmpeg python3 python3-pip ca-certificates \
-  && python3 -m pip install --no-cache-dir --upgrade yt-dlp \
+  && apt-get install -y --no-install-recommends ffmpeg python3 python3-venv ca-certificates \
+  && python3 -m venv /opt/yt-dlp-venv \
+  && /opt/yt-dlp-venv/bin/pip install --no-cache-dir --upgrade pip yt-dlp \
   && rm -rf /var/lib/apt/lists/*
 
 ENV NODE_ENV=production
 ENV PORT=3000
+ENV YTDLP_PATH=/opt/yt-dlp-venv/bin/yt-dlp
 
 COPY --from=build /app/.next ./.next
 COPY --from=build /app/public ./public
