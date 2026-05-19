@@ -41,19 +41,28 @@ export async function GET(request: Request) {
 }
 
 async function getVideoMetadata(url: string) {
+  const separator = "__YT_META_SPLIT__";
   const output = await runYtDlpWithOutput(
     withYtDlpDefaults([
       "--no-playlist",
-      "--dump-single-json",
       "--skip-download",
-      "--format",
-      "best",
       "--extractor-args",
       "youtube:player_client=web",
+      "--print",
+      `%(title)s${separator}%(duration)s${separator}%(thumbnail)s${separator}%(webpage_url)s`,
       url,
     ])
   );
-  return JSON.parse(output) as YtDlpMetadata;
+
+  const [title = "", durationRaw = "", thumbnail = "", webpageUrl = ""] = output.trim().split(separator);
+  const duration = Number.parseInt(durationRaw, 10);
+
+  return {
+    title,
+    duration: Number.isFinite(duration) ? duration : 0,
+    thumbnail,
+    webpage_url: webpageUrl,
+  } satisfies YtDlpMetadata;
 }
 
 async function runYtDlpWithOutput(args: string[]) {
