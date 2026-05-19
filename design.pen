@@ -1,0 +1,2949 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Mobile/Home",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "#F4F7FB",
+      "layout": "vertical",
+      "gap": 16,
+      "padding": [
+        20,
+        16
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "ovoET",
+          "name": "header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            8,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "MuIl6",
+              "name": "title",
+              "fill": "#0F172A",
+              "content": "YT Media Downloader",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "jduSN",
+              "name": "subtitle",
+              "fill": "#475569",
+              "content": "Baixe video ou audio com rapidez",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "l5MRL",
+          "name": "actions",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "UbA79",
+              "name": "sessionTag",
+              "fill": "#E2E8F0",
+              "cornerRadius": 999,
+              "padding": [
+                10,
+                6
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Utm3v",
+                  "name": "sessionText",
+                  "fill": "#334155",
+                  "content": "Sessao ativa",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qngRP",
+              "name": "clearBtn",
+              "fill": "#FFFFFF",
+              "cornerRadius": 10,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": [
+                12,
+                8
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QgjmE",
+                  "name": "clearText",
+                  "fill": "#334155",
+                  "content": "Limpar historico",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VUJ8j",
+          "name": "downloadCard",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "vertical",
+          "gap": 14,
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "RpGJT",
+              "name": "cardTitle",
+              "fill": "#0F172A",
+              "content": "Preparar download",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "v5UkAE",
+              "name": "urlLabel",
+              "fill": "#475569",
+              "content": "Link do YouTube",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "NL1gj",
+              "name": "urlField",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dH0rZ",
+                  "name": "urlPlaceholder",
+                  "fill": "#94A3B8",
+                  "content": "https://youtube.com/watch?v=...",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "J7gAMT",
+              "name": "mediaRow",
+              "width": "fill_container",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "pJvUe",
+                  "name": "videoChip",
+                  "width": "fill_container",
+                  "fill": "#0EA5E9",
+                  "cornerRadius": 12,
+                  "padding": [
+                    12,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jZpZ3",
+                      "name": "videoChipText",
+                      "fill": "#FFFFFF",
+                      "content": "Video",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "x9M59",
+                  "name": "audioChip",
+                  "width": "fill_container",
+                  "fill": "#E2E8F0",
+                  "cornerRadius": 12,
+                  "padding": [
+                    12,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UtJBU",
+                      "name": "audioChipText",
+                      "fill": "#334155",
+                      "content": "Audio",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "OiNr3",
+              "name": "qualityLabel",
+              "fill": "#475569",
+              "content": "Qualidade",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "FIjFK",
+              "name": "qualityField",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": 12,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ru5kU",
+                  "name": "qualityText",
+                  "fill": "#0F172A",
+                  "content": "MP4 1080p",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "A3EdFW",
+                  "name": "qualityArrow",
+                  "fill": "#64748B",
+                  "content": "v",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "K3n4TT",
+              "name": "cta",
+              "width": "fill_container",
+              "fill": "#0284C7",
+              "cornerRadius": 14,
+              "padding": 14,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cFtQL",
+                  "name": "ctaText",
+                  "fill": "#FFFFFF",
+                  "content": "Preparar download",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "AnSIG",
+          "name": "historyCard",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 14,
+          "children": [
+            {
+              "type": "text",
+              "id": "BC2W0",
+              "name": "historyTitle",
+              "fill": "#0F172A",
+              "content": "Historico da sessao",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 16,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "f9dLdx",
+              "name": "entry",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DHrYM",
+                  "name": "entryTop",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QKMbz",
+                      "name": "entryName",
+                      "fill": "#0F172A",
+                      "content": "Lo-fi coding mix",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WhMO7",
+                      "name": "entryType",
+                      "fill": "#0369A1",
+                      "content": "Audio MP3",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "F8ZjM",
+                  "name": "entryUrl",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "youtube.com/watch?v=abc123",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "nvpnQ",
+                  "name": "entryMeta",
+                  "fill": "#94A3B8",
+                  "content": "Baixado ha 12 min",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Z5HHf",
+      "x": 470,
+      "y": 0,
+      "name": "Mobile/Loading",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "#F4F7FB",
+      "layout": "vertical",
+      "gap": 16,
+      "padding": [
+        20,
+        16
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "IlFxW",
+          "name": "header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            8,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "jA3uW",
+              "name": "title",
+              "fill": "#0F172A",
+              "content": "YT Media Downloader",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "q5bsS",
+              "name": "subtitle",
+              "fill": "#475569",
+              "content": "Baixe video ou audio com rapidez",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "X04ggs",
+          "name": "actions",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "JGZHx",
+              "name": "sessionTag",
+              "fill": "#E2E8F0",
+              "cornerRadius": 999,
+              "padding": [
+                10,
+                6
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "b3z3jp",
+                  "name": "sessionText",
+                  "fill": "#334155",
+                  "content": "Sessao ativa",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Q24mKk",
+              "name": "clearBtn",
+              "fill": "#FFFFFF",
+              "cornerRadius": 10,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": [
+                12,
+                8
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "H6m1NA",
+                  "name": "clearText",
+                  "fill": "#334155",
+                  "content": "Limpar historico",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "IpJ3r",
+          "name": "downloadCard",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "vertical",
+          "gap": 14,
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "Gfuim",
+              "name": "cardTitle",
+              "fill": "#0F172A",
+              "content": "Analisando link",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "j5aUS",
+              "name": "urlLabel",
+              "fill": "#475569",
+              "content": "Link do YouTube",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "UXTBk",
+              "name": "urlField",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ywJbW",
+                  "name": "urlPlaceholder",
+                  "fill": "#94A3B8",
+                  "content": "https://youtube.com/watch?v=...",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "X8piNk",
+              "name": "mediaRow",
+              "width": "fill_container",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ztQVq",
+                  "name": "videoChip",
+                  "width": "fill_container",
+                  "fill": "#0EA5E9",
+                  "cornerRadius": 12,
+                  "padding": [
+                    12,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "i18hk",
+                      "name": "videoChipText",
+                      "fill": "#FFFFFF",
+                      "content": "Video",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gpBfh",
+                  "name": "audioChip",
+                  "width": "fill_container",
+                  "fill": "#E2E8F0",
+                  "cornerRadius": 12,
+                  "padding": [
+                    12,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Xtnnm",
+                      "name": "audioChipText",
+                      "fill": "#334155",
+                      "content": "Audio",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "L8Afch",
+              "name": "qualityLabel",
+              "fill": "#475569",
+              "content": "Qualidade",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "VAp7Q",
+              "name": "qualityField",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": 12,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "R5IQq",
+                  "name": "qualityText",
+                  "fill": "#0F172A",
+                  "content": "MP4 1080p",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "vQ0T1",
+                  "name": "qualityArrow",
+                  "fill": "#64748B",
+                  "content": "v",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UA3jC",
+              "name": "cta",
+              "width": "fill_container",
+              "fill": "#94A3B8",
+              "cornerRadius": 14,
+              "padding": 14,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vg9sP",
+                  "name": "ctaText",
+                  "fill": "#FFFFFF",
+                  "content": "Preparando...",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "EIOos",
+          "name": "historyCard",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 14,
+          "children": [
+            {
+              "type": "text",
+              "id": "IGyTL",
+              "name": "historyTitle",
+              "fill": "#0F172A",
+              "content": "Historico da sessao",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 16,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "ynPq1",
+              "name": "entry",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wzQkN",
+                  "name": "entryTop",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HsiD7",
+                      "name": "entryName",
+                      "fill": "#0F172A",
+                      "content": "Aguardando novo download",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bQROJ",
+                      "name": "entryType",
+                      "fill": "#0369A1",
+                      "content": "--",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "S0PiiL",
+                  "name": "entryUrl",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Metadados serao exibidos em instantes",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "h1X2zx",
+                  "name": "entryMeta",
+                  "fill": "#94A3B8",
+                  "content": "Estado de carregamento",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "IHPTq",
+      "x": 940,
+      "y": 0,
+      "name": "Mobile/Ready",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "#F4F7FB",
+      "layout": "vertical",
+      "gap": 16,
+      "padding": [
+        20,
+        16
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "rIvX3",
+          "name": "header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            8,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "gnMi9",
+              "name": "title",
+              "fill": "#0F172A",
+              "content": "YT Media Downloader",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "kvKhV",
+              "name": "subtitle",
+              "fill": "#475569",
+              "content": "Baixe video ou audio com rapidez",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "m3iKiL",
+          "name": "actions",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "I01I5",
+              "name": "sessionTag",
+              "fill": "#E2E8F0",
+              "cornerRadius": 999,
+              "padding": [
+                10,
+                6
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "n1VDF",
+                  "name": "sessionText",
+                  "fill": "#334155",
+                  "content": "Sessao ativa",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "B8FB2D",
+              "name": "clearBtn",
+              "fill": "#FFFFFF",
+              "cornerRadius": 10,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": [
+                12,
+                8
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "doKOk",
+                  "name": "clearText",
+                  "fill": "#334155",
+                  "content": "Limpar historico",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "S3RL4",
+          "name": "downloadCard",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "vertical",
+          "gap": 14,
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "GLt0A",
+              "name": "cardTitle",
+              "fill": "#0F172A",
+              "content": "Arquivo pronto para baixar",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "zyBW6",
+              "name": "urlLabel",
+              "fill": "#475569",
+              "content": "Link validado",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "E9nzp",
+              "name": "urlField",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JaqDt",
+                  "name": "urlPlaceholder",
+                  "fill": "#94A3B8",
+                  "content": "https://youtube.com/watch?v=ready123",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "tnzYO",
+              "name": "mediaRow",
+              "width": "fill_container",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "d61GCB",
+                  "name": "videoChip",
+                  "width": "fill_container",
+                  "fill": "#0EA5E9",
+                  "cornerRadius": 12,
+                  "padding": [
+                    12,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yvzaM",
+                      "name": "videoChipText",
+                      "fill": "#FFFFFF",
+                      "content": "Video",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lh2Td",
+                  "name": "audioChip",
+                  "width": "fill_container",
+                  "fill": "#E2E8F0",
+                  "cornerRadius": 12,
+                  "padding": [
+                    12,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "d4Hj77",
+                      "name": "audioChipText",
+                      "fill": "#334155",
+                      "content": "Audio",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Dsjq4",
+              "name": "qualityLabel",
+              "fill": "#475569",
+              "content": "Qualidade",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "N4to1",
+              "name": "qualityField",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": 12,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "LGwJW",
+                  "name": "qualityText",
+                  "fill": "#0F172A",
+                  "content": "MP4 720p",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "O8jeWT",
+                  "name": "qualityArrow",
+                  "fill": "#64748B",
+                  "content": "v",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gqBUW",
+              "name": "cta",
+              "width": "fill_container",
+              "fill": "#0284C7",
+              "cornerRadius": 14,
+              "padding": 14,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "j9qvc",
+                  "name": "ctaText",
+                  "fill": "#FFFFFF",
+                  "content": "Baixar agora",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Y6SK1A",
+          "name": "historyCard",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 14,
+          "children": [
+            {
+              "type": "text",
+              "id": "Z0VB5Q",
+              "name": "historyTitle",
+              "fill": "#0F172A",
+              "content": "Historico da sessao",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 16,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "A197I",
+              "name": "entry",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "C5VI9",
+                  "name": "entryTop",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NBKvw",
+                      "name": "entryName",
+                      "fill": "#0F172A",
+                      "content": "Canal Dev Talks - Episodio 42",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Djc6h",
+                      "name": "entryType",
+                      "fill": "#0369A1",
+                      "content": "Video MP4",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "MgSIm",
+                  "name": "entryUrl",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "youtube.com/watch?v=ready123",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "lpmFu",
+                  "name": "entryMeta",
+                  "fill": "#94A3B8",
+                  "content": "Pronto ha 1 min",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "jq2zg",
+      "x": 1410,
+      "y": 0,
+      "name": "Mobile/Error",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "#F4F7FB",
+      "layout": "vertical",
+      "gap": 16,
+      "padding": [
+        20,
+        16
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "j5eOgu",
+          "name": "header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            8,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "WauDN",
+              "name": "title",
+              "fill": "#0F172A",
+              "content": "YT Media Downloader",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "wpr9i",
+              "name": "subtitle",
+              "fill": "#475569",
+              "content": "Baixe video ou audio com rapidez",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "BqF5Q",
+          "name": "actions",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "dluCl",
+              "name": "sessionTag",
+              "fill": "#E2E8F0",
+              "cornerRadius": 999,
+              "padding": [
+                10,
+                6
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "P1sjik",
+                  "name": "sessionText",
+                  "fill": "#334155",
+                  "content": "Sessao ativa",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "L4LLy",
+              "name": "clearBtn",
+              "fill": "#FFFFFF",
+              "cornerRadius": 10,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": [
+                12,
+                8
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EVIz3",
+                  "name": "clearText",
+                  "fill": "#334155",
+                  "content": "Limpar historico",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "M8EEgt",
+          "name": "downloadCard",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "vertical",
+          "gap": 14,
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "G6MFC",
+              "name": "cardTitle",
+              "fill": "#0F172A",
+              "content": "Nao foi possivel preparar",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "tEiFJ",
+              "name": "urlLabel",
+              "fill": "#475569",
+              "content": "Link do YouTube",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "ZsI3P",
+              "name": "urlField",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xMlXg",
+                  "name": "urlPlaceholder",
+                  "fill": "#94A3B8",
+                  "content": "https://youtube.com/watch?v=invalido",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XQ2Ng",
+              "name": "mediaRow",
+              "width": "fill_container",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "C4Gzvu",
+                  "name": "videoChip",
+                  "width": "fill_container",
+                  "fill": "#0EA5E9",
+                  "cornerRadius": 12,
+                  "padding": [
+                    12,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tYsZM",
+                      "name": "videoChipText",
+                      "fill": "#FFFFFF",
+                      "content": "Video",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "yqZqf",
+                  "name": "audioChip",
+                  "width": "fill_container",
+                  "fill": "#E2E8F0",
+                  "cornerRadius": 12,
+                  "padding": [
+                    12,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "v36KTg",
+                      "name": "audioChipText",
+                      "fill": "#334155",
+                      "content": "Audio",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "qet2W",
+              "name": "qualityLabel",
+              "fill": "#475569",
+              "content": "Detalhes",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "gVzKG",
+              "name": "qualityField",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": 12,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "d7Ovd",
+                  "name": "qualityText",
+                  "fill": "#0F172A",
+                  "content": "Video privado ou indisponivel",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "SpqsS",
+                  "name": "qualityArrow",
+                  "fill": "#64748B",
+                  "content": "v",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bRPF3",
+              "name": "cta",
+              "width": "fill_container",
+              "fill": "#DC2626",
+              "cornerRadius": 14,
+              "padding": 14,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JNq6C",
+                  "name": "ctaText",
+                  "fill": "#FFFFFF",
+                  "content": "Tentar novamente",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Y7p9dY",
+          "name": "historyCard",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 14,
+          "children": [
+            {
+              "type": "text",
+              "id": "pOBGY",
+              "name": "historyTitle",
+              "fill": "#0F172A",
+              "content": "Historico da sessao",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 16,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "k0Uzb",
+              "name": "entry",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "YkPyy",
+                  "name": "entryTop",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ygQHS",
+                      "name": "entryName",
+                      "fill": "#0F172A",
+                      "content": "Ultima tentativa",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "A345cI",
+                      "name": "entryType",
+                      "fill": "#0369A1",
+                      "content": "Erro",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "e6kM1",
+                  "name": "entryUrl",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Verifique o link e tente novamente",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "wZJko",
+                  "name": "entryMeta",
+                  "fill": "#94A3B8",
+                  "content": "Agora",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "thTJD",
+      "x": 1880,
+      "y": 0,
+      "name": "Mobile/HistoryEmpty",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "#F4F7FB",
+      "layout": "vertical",
+      "gap": 16,
+      "padding": [
+        20,
+        16
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "SeKDE",
+          "name": "header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            8,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "k0BGZV",
+              "name": "title",
+              "fill": "#0F172A",
+              "content": "YT Media Downloader",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "LQ4iC",
+              "name": "subtitle",
+              "fill": "#475569",
+              "content": "Baixe video ou audio com rapidez",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bbJax",
+          "name": "actions",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "atY6F",
+              "name": "sessionTag",
+              "fill": "#E2E8F0",
+              "cornerRadius": 999,
+              "padding": [
+                10,
+                6
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "IP2Jd",
+                  "name": "sessionText",
+                  "fill": "#334155",
+                  "content": "Sessao ativa",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "lezk8",
+              "name": "clearBtn",
+              "fill": "#FFFFFF",
+              "cornerRadius": 10,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": [
+                12,
+                8
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "yqyZJ",
+                  "name": "clearText",
+                  "fill": "#334155",
+                  "content": "Limpar historico",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "HGbpl",
+          "name": "downloadCard",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "vertical",
+          "gap": 14,
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "C4eQzZ",
+              "name": "cardTitle",
+              "fill": "#0F172A",
+              "content": "Preparar download",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "XZTdX",
+              "name": "urlLabel",
+              "fill": "#475569",
+              "content": "Link do YouTube",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "C0JAw",
+              "name": "urlField",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "LdCa7",
+                  "name": "urlPlaceholder",
+                  "fill": "#94A3B8",
+                  "content": "https://youtube.com/watch?v=...",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "GibQT",
+              "name": "mediaRow",
+              "width": "fill_container",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "kSbzv",
+                  "name": "videoChip",
+                  "width": "fill_container",
+                  "fill": "#0EA5E9",
+                  "cornerRadius": 12,
+                  "padding": [
+                    12,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "V5WThr",
+                      "name": "videoChipText",
+                      "fill": "#FFFFFF",
+                      "content": "Video",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CV1RX",
+                  "name": "audioChip",
+                  "width": "fill_container",
+                  "fill": "#E2E8F0",
+                  "cornerRadius": 12,
+                  "padding": [
+                    12,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "d1jfo",
+                      "name": "audioChipText",
+                      "fill": "#334155",
+                      "content": "Audio",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Bo3VV",
+              "name": "qualityLabel",
+              "fill": "#475569",
+              "content": "Qualidade",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "B4uLB",
+              "name": "qualityField",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": 12,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ncRig",
+                  "name": "qualityText",
+                  "fill": "#0F172A",
+                  "content": "MP4 1080p",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "oFIg9",
+                  "name": "qualityArrow",
+                  "fill": "#64748B",
+                  "content": "v",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "U8gqk",
+              "name": "cta",
+              "width": "fill_container",
+              "fill": "#0284C7",
+              "cornerRadius": 14,
+              "padding": 14,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TzKrG",
+                  "name": "ctaText",
+                  "fill": "#FFFFFF",
+                  "content": "Preparar download",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "T2bic",
+          "name": "historyCard",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 14,
+          "children": [
+            {
+              "type": "text",
+              "id": "p2PWx",
+              "name": "historyTitle",
+              "fill": "#0F172A",
+              "content": "Historico da sessao",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 16,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "WeYaZ",
+              "name": "entry",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "x5kKH",
+                  "name": "entryTop",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PiVXj",
+                      "name": "entryName",
+                      "fill": "#0F172A",
+                      "content": "Nenhum download ainda",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VfMOL",
+                      "name": "entryType",
+                      "fill": "#0369A1",
+                      "content": "Comece pelo link acima",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "m3n7jj",
+                  "name": "entryUrl",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Seus downloads recentes aparecem aqui",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "s4cK5",
+                  "name": "entryMeta",
+                  "fill": "#94A3B8",
+                  "content": "Historico local da sessao",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "EXlsc",
+      "x": 2350,
+      "y": 0,
+      "name": "Desktop/Home",
+      "width": 1280,
+      "height": 900,
+      "fill": "#F4F7FB",
+      "layout": "vertical",
+      "gap": 20,
+      "padding": [
+        28,
+        32
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "pHslO",
+          "name": "dHeader",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Nq5nq",
+              "name": "dHeadLeft",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "WyFYX",
+                  "name": "dTitle",
+                  "fill": "#0F172A",
+                  "content": "YT Media Downloader",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 26,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "XlG8v",
+                  "name": "dSub",
+                  "fill": "#475569",
+                  "content": "Fluxo rapido para baixar video ou audio",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "e2ss9",
+              "name": "dClear",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": [
+                12,
+                10
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vfGlN",
+                  "name": "dClearText",
+                  "fill": "#334155",
+                  "content": "Limpar historico",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tZ5Vo",
+          "name": "dBody",
+          "width": "fill_container",
+          "height": "fill_container",
+          "gap": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "M35jQ",
+              "name": "dLeft",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 18,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E2E8F0"
+              },
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "J4Eonr",
+                  "name": "dLT",
+                  "fill": "#0F172A",
+                  "content": "Preparar download",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "T4Luwu",
+                  "name": "dUrlLabel",
+                  "fill": "#475569",
+                  "content": "Link do YouTube",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "N6x4WS",
+                  "name": "dUrlField",
+                  "width": "fill_container",
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#CBD5E1"
+                  },
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ITt5M",
+                      "name": "dUrlText",
+                      "fill": "#94A3B8",
+                      "content": "https://youtube.com/watch?v=...",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NoPso",
+                  "name": "dRow",
+                  "width": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "HIMGS",
+                      "name": "dVideo",
+                      "width": "fill_container",
+                      "fill": "#0EA5E9",
+                      "cornerRadius": 12,
+                      "padding": [
+                        12,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "A05kxy",
+                          "name": "dVideoT",
+                          "fill": "#FFFFFF",
+                          "content": "Video",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "g67mF",
+                      "name": "dAudio",
+                      "width": "fill_container",
+                      "fill": "#E2E8F0",
+                      "cornerRadius": 12,
+                      "padding": [
+                        12,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "egyS7",
+                          "name": "dAudioT",
+                          "fill": "#334155",
+                          "content": "Audio",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "p3oH2",
+                  "name": "dQLabel",
+                  "fill": "#475569",
+                  "content": "Qualidade",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "fztXS",
+                  "name": "dQ",
+                  "width": "fill_container",
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 12,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#CBD5E1"
+                  },
+                  "padding": 12,
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Wfkow",
+                      "name": "dQText",
+                      "fill": "#0F172A",
+                      "content": "MP4 1080p",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VQI73",
+                      "name": "dQArrow",
+                      "fill": "#64748B",
+                      "content": "v",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Q9NJk",
+                  "name": "dCTA",
+                  "width": "fill_container",
+                  "fill": "#0284C7",
+                  "cornerRadius": 14,
+                  "padding": 14,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "i02aW",
+                      "name": "dCTAT",
+                      "fill": "#FFFFFF",
+                      "content": "Preparar download",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "u0SZon",
+              "name": "dRight",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 18,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#E2E8F0"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "GrViT",
+                  "name": "dRT",
+                  "fill": "#0F172A",
+                  "content": "Historico da sessao",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "T6uq2D",
+                  "name": "dItem1",
+                  "width": "fill_container",
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "HH05Z",
+                      "name": "dI1Top",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Eesh3",
+                          "name": "dI1Name",
+                          "fill": "#0F172A",
+                          "content": "Entrevista Tech 2026",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LhAd4",
+                          "name": "dI1Type",
+                          "fill": "#0369A1",
+                          "content": "Video MP4",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Qw81p",
+                      "name": "dI1Url",
+                      "fill": "#64748B",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "youtube.com/watch?v=desk001",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "y6Mz6",
+                      "name": "dI1Meta",
+                      "fill": "#94A3B8",
+                      "content": "Baixado ha 3 min",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rfiR5",
+                  "name": "dItem2",
+                  "width": "fill_container",
+                  "fill": "#F8FAFC",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "RJrGl",
+                      "name": "dI2Top",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "A1GKys",
+                          "name": "dI2Name",
+                          "fill": "#0F172A",
+                          "content": "Lo-fi coding mix",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "IALVC",
+                          "name": "dI2Type",
+                          "fill": "#0369A1",
+                          "content": "Audio MP3",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "B1PkSs",
+                      "name": "dI2Url",
+                      "fill": "#64748B",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "youtube.com/watch?v=desk002",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YACf9",
+                      "name": "dI2Meta",
+                      "fill": "#94A3B8",
+                      "content": "Baixado ha 27 min",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "mtRm1",
+      "x": 3710,
+      "y": 0,
+      "name": "Mobile/History",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "#F4F7FB",
+      "layout": "vertical",
+      "gap": 16,
+      "padding": [
+        20,
+        16
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "F2bj5",
+          "name": "header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            8,
+            0
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "tmWuN",
+              "name": "title",
+              "fill": "#0F172A",
+              "content": "YT Media Downloader",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "I3mXRe",
+              "name": "subtitle",
+              "fill": "#475569",
+              "content": "Baixe video ou audio com rapidez",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "z35FGw",
+          "name": "actions",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "v0cjS",
+              "name": "sessionTag",
+              "fill": "#E2E8F0",
+              "cornerRadius": 999,
+              "padding": [
+                10,
+                6
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "U8jWnB",
+                  "name": "sessionText",
+                  "fill": "#334155",
+                  "content": "Sessao ativa",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "c8enaP",
+              "name": "clearBtn",
+              "fill": "#FFFFFF",
+              "cornerRadius": 10,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": [
+                12,
+                8
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JpiLf",
+                  "name": "clearText",
+                  "fill": "#334155",
+                  "content": "Limpar historico",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KJ372",
+          "name": "downloadCard",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "vertical",
+          "gap": 14,
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "GEZDK",
+              "name": "cardTitle",
+              "fill": "#0F172A",
+              "content": "Preparar download",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "k7QlsF",
+              "name": "urlLabel",
+              "fill": "#475569",
+              "content": "Link do YouTube",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "kFcft",
+              "name": "urlField",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "F5SeD",
+                  "name": "urlPlaceholder",
+                  "fill": "#94A3B8",
+                  "content": "https://youtube.com/watch?v=...",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "exrtV",
+              "name": "mediaRow",
+              "width": "fill_container",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IbjLe",
+                  "name": "videoChip",
+                  "width": "fill_container",
+                  "fill": "#0EA5E9",
+                  "cornerRadius": 12,
+                  "padding": [
+                    12,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "unlXc",
+                      "name": "videoChipText",
+                      "fill": "#FFFFFF",
+                      "content": "Video",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "v0LAu",
+                  "name": "audioChip",
+                  "width": "fill_container",
+                  "fill": "#E2E8F0",
+                  "cornerRadius": 12,
+                  "padding": [
+                    12,
+                    10
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "r0s4tb",
+                      "name": "audioChipText",
+                      "fill": "#334155",
+                      "content": "Audio",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "r1nA3a",
+              "name": "qualityLabel",
+              "fill": "#475569",
+              "content": "Qualidade",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "kjdoC",
+              "name": "qualityField",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#CBD5E1"
+              },
+              "padding": 12,
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "V0QrnW",
+                  "name": "qualityText",
+                  "fill": "#0F172A",
+                  "content": "MP4 1080p",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "kucZd",
+                  "name": "qualityArrow",
+                  "fill": "#64748B",
+                  "content": "v",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Gfq24",
+              "name": "cta",
+              "width": "fill_container",
+              "fill": "#0284C7",
+              "cornerRadius": 14,
+              "padding": 14,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "w3NRIc",
+                  "name": "ctaText",
+                  "fill": "#FFFFFF",
+                  "content": "Preparar download",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "vyXb2",
+          "name": "historyCard",
+          "width": "fill_container",
+          "fill": "#FFFFFF",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#E2E8F0"
+          },
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 14,
+          "children": [
+            {
+              "type": "text",
+              "id": "WSiln",
+              "name": "historyTitle",
+              "fill": "#0F172A",
+              "content": "Historico da sessao",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 16,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "jz4ul",
+              "name": "entry",
+              "width": "fill_container",
+              "fill": "#F8FAFC",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JKIhQ",
+                  "name": "entryTop",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "V7vFi",
+                      "name": "entryName",
+                      "fill": "#0F172A",
+                      "content": "Nenhum download ainda",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uOIXQ",
+                      "name": "entryType",
+                      "fill": "#0369A1",
+                      "content": "Comece pelo link acima",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "jwETa",
+                  "name": "entryUrl",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Seus downloads recentes aparecem aqui",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "V77ZNp",
+                  "name": "entryMeta",
+                  "fill": "#94A3B8",
+                  "content": "Historico local da sessao",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Cp0o1",
+          "name": "entry2",
+          "width": "fill_container",
+          "fill": "#F8FAFC",
+          "cornerRadius": 12,
+          "layout": "vertical",
+          "gap": 8,
+          "padding": 12,
+          "children": [
+            {
+              "type": "frame",
+              "id": "mIONm",
+              "name": "entry2Top",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kTjTI",
+                  "name": "entry2Name",
+                  "fill": "#0F172A",
+                  "content": "Lo-fi coding mix",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "G8fkb",
+                  "name": "entry2Type",
+                  "fill": "#0369A1",
+                  "content": "Audio MP3",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Tc73o",
+              "name": "entry2Url",
+              "fill": "#64748B",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "youtube.com/watch?v=lofi002",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "ykqTs",
+              "name": "entry2Meta",
+              "fill": "#94A3B8",
+              "content": "Baixado ha 27 min",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "N46PQ",
+              "name": "actionsRow",
+              "width": "fill_container",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XfBcJ",
+                  "name": "retryBtn",
+                  "width": "fill_container",
+                  "fill": "#E0F2FE",
+                  "cornerRadius": 10,
+                  "padding": [
+                    10,
+                    8
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "l9YYP6",
+                      "name": "retryTxt",
+                      "fill": "#0369A1",
+                      "content": "Baixar novamente",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "X5gExA",
+                  "name": "copyBtn",
+                  "width": "fill_container",
+                  "fill": "#F1F5F9",
+                  "cornerRadius": 10,
+                  "padding": [
+                    10,
+                    8
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zd0Fw",
+                      "name": "copyTxt",
+                      "fill": "#334155",
+                      "content": "Copiar link",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Z38E7s",
+                  "name": "removeBtn",
+                  "width": "fill_container",
+                  "fill": "#FEF2F2",
+                  "cornerRadius": 10,
+                  "padding": [
+                    10,
+                    8
+                  ],
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XRT8z",
+                      "name": "removeTxt",
+                      "fill": "#B91C1C",
+                      "content": "Remover",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
