@@ -23,6 +23,10 @@ RUN apt-get update \
 ENV NODE_ENV=production
 ENV PORT=3000
 ENV YTDLP_PATH=/opt/yt-dlp-venv/bin/yt-dlp
+ENV YTDLP_COOKIES_PATH=/data/ytdlp/youtube-cookies.txt
+
+RUN mkdir -p /data/ytdlp
+VOLUME ["/data"]
 
 COPY --from=build /app/.next ./.next
 COPY --from=build /app/public ./public

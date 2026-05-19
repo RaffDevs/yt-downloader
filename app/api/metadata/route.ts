@@ -41,31 +41,33 @@ export async function GET(request: Request) {
 }
 
 async function getVideoMetadata(url: string) {
-  const output = await runYtDlpWithOutput(withYtDlpDefaults(["--no-playlist", "--dump-single-json", "--skip-download", url]));
+  const output = await runYtDlpWithOutput(
+    withYtDlpDefaults([
+      "--no-playlist",
+      "--dump-single-json",
+      "--skip-download",
+      "--format",
+      "best",
+      "--extractor-args",
+      "youtube:player_client=web",
+      url,
+    ])
+  );
   return JSON.parse(output) as YtDlpMetadata;
 }
 
 async function runYtDlpWithOutput(args: string[]) {
-  const preferred = process.env.YTDLP_PATH?.trim();
-  const candidates: Array<{ command: string; args: string[] }> = [
-    ...(preferred ? [{ command: preferred, args }] : []),
-    { command: "yt-dlp", args },
-    { command: "python3", args: ["-m", "yt_dlp", ...args] },
-    { command: "python", args: ["-m", "yt_dlp", ...args] },
-  ];
-
-  const errors: string[] = [];
-
-  for (const candidate of candidates) {
-    try {
-      return await runProcessCapture(candidate.command, candidate.args);
-    } catch (error) {
-      const message = error instanceof Error ? error.message : String(error);
-      errors.push(`${candidate.command}: ${message}`);
-    }
+  const command = process.env.YTDLP_PATH?.trim();
+  if (!command) {
+    throw new Error("YTDLP_PATH nao configurado no ambiente.");
   }
 
-  throw new Error(buildYtDlpErrorMessage(errors));
+  try {
+    return await runProcessCapture(command, args);
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    throw new Error(buildYtDlpErrorMessage([`${command}: ${message}`]));
+  }
 }
 
 async function runProcessCapture(command: string, args: string[]) {

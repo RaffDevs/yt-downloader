@@ -34,8 +34,8 @@ export async function POST(request: Request) {
     return Response.json({ error: "Formato invalido. Envie cookies.txt no formato Netscape." }, { status: 400 });
   }
 
-  const configuredPath = process.env.YTDLP_COOKIES_PATH?.trim() || "/tmp/youtube-cookies.txt";
-  const outputPath = isAbsolute(configuredPath) ? configuredPath : join("/tmp", configuredPath);
+  const configuredPath = process.env.YTDLP_COOKIES_PATH?.trim() || "/data/ytdlp/youtube-cookies.txt";
+  const outputPath = isAbsolute(configuredPath) ? configuredPath : join("/data", configuredPath);
 
   try {
     await mkdir(dirname(outputPath), { recursive: true });
