@@ -14,7 +14,10 @@ RUN npm run build
 FROM node:22-bookworm-slim AS runtime
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y --no-install-recommends yt-dlp ffmpeg && rm -rf /var/lib/apt/lists/*
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends ffmpeg python3 python3-pip ca-certificates \
+  && python3 -m pip install --no-cache-dir --upgrade yt-dlp \
+  && rm -rf /var/lib/apt/lists/*
 
 ENV NODE_ENV=production
 ENV PORT=3000
