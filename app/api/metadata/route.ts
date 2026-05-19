@@ -105,7 +105,7 @@ function isYouTubeUrl(rawUrl: string) {
 }
 
 function withYtDlpDefaults(args: string[]) {
-  const defaults = ["--no-warnings"];
+  const defaults = ["--ignore-config", "--no-warnings"];
   const cookiesPath = process.env.YTDLP_COOKIES_PATH?.trim();
 
   if (cookiesPath) {
